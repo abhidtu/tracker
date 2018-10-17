@@ -95,7 +95,7 @@ module.exports = function(app){
                             end:newTime
                         };
                         insertDocuments(databaseConnection, newDoc, function (insertResult) {
-                            console.log(insertResult);
+                            //console.log(insertResult);
                         });
 
                     }
@@ -110,7 +110,7 @@ module.exports = function(app){
                         end:newTime
                     };
                     insertDocuments(databaseConnection, newDocForNewTicketId, function (insertResult) {
-                        console.log(insertResult);
+                        //console.log(insertResult);
                     })
                 }
 
