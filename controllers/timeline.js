@@ -28,7 +28,6 @@ module.exports = function(app){
 
                 for(var i=0; i < docs.length; i++) {
                     docs[i]['id'] = i+1;
-                    docs[i]['type'] = "box";
                     docs[i]['group'] = Math.abs(docs[i].content.hashCode());
                 }
 

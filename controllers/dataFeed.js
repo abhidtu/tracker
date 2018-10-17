@@ -1,4 +1,5 @@
 var metricsMap = {};
+var servicesMap = {};
 
 const db = require('../dao/MongoClient.js');
 
@@ -54,6 +55,7 @@ module.exports = function(app){
                     var ticketId = doc.content;
 
                     metricsMap[ticketId] = doc;
+                    servicesMap[doc.projectName] = 1;
 
                 }
 
